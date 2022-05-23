@@ -11,7 +11,7 @@ const FILE_RSA_PATH = '~/.ssh/work_rsa'
 
 async function createSshKey() {
   try {
-    await execute(`ssh-keygen -t rsa -b 4096 -C "bluemarblenetwork@gmail.com.br" -f ${FILE_RSA_PATH} -N ""`)
+    await execute(`ssh-keygen -t rsa -b 4096 -C "bluemarblenetwork@gmail.com.br" -G ${FILE_RSA_PATH} -N ""`)
     await fs.writeFile('~/.ssh/config', CONFIG_CONTENT)
     const result = await execute(`cat ${FILE_RSA_PATH}.pub`)
     console.log('Chave pública gerada:\n')
