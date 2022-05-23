@@ -1,7 +1,7 @@
 import axios from "axios"
 
 export const github = () => {
-  const TOKEN = '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'
+  const TOKEN = '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'
   const api = axios.create({
     auth: {
       username: 'bluemarble-network',
