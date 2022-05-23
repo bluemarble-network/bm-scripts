@@ -1,0 +1,22 @@
+{
+  "name": "bm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "bm": "./bin/bm.js"
+  },
+  "keywords": [],
+  "author": "",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cli-spinners": "^2.6.1",
+    "enquirer": "^2.3.6",
+    "loading-cli": "^1.1.0"
+  }
+}
