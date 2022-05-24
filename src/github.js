@@ -1,7 +1,10 @@
 import axios from "axios"
+import { config } from 'dotenv'
+
+config()
 
 export const github = () => {
-  const TOKEN = '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'
+  const TOKEN = process.env.GITHUB_TOKEN
   const api = axios.create({
     auth: {
       username: 'bluemarble-network',

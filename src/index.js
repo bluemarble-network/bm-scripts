@@ -4,9 +4,14 @@ import { configuraAmbiente } from './configura-ambiente.js'
 import { parseArgs } from './util.js'
 import spinner from 'cli-spinners'
 import loading from 'loading-cli'
+import { config } from 'dotenv'
+import path from 'node:path'
+import localConfig from './config.js'
+
+config({ path: `${localConfig.root}${path.sep}.env` })
 
 export const load = loading('')
-load.frame(spinner.monkey.frames)
+load.frame(spinner.simpleDots.frames)
 
 export async function main(args) {
   const acceptedArgs = parseArgs(args)

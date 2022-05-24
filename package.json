@@ -16,6 +16,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "cli-spinners": "^2.6.1",
+    "dotenv": "^16.0.1",
     "enquirer": "^2.3.6",
     "loading-cli": "^1.1.0"
   }
