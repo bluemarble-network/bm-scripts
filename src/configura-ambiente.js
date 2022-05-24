@@ -35,6 +35,7 @@ async function createSshKey() {
     load.stop()
     console.log('Chave pública gerada 🌹:\n')
     console.log(result)
+
   } catch (error) {
     console.log('Não foi possível criar chave SSH', error)
   } finally {
